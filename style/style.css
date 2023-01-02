@@ -30,29 +30,29 @@ body{
 
 /* logo */
 .logo{
-    width: 50px;
-    height: 50px;
-    transition: transform .2s ease-in;
+    /* cursor: pointer; */
+    height: 38px;
+    margin: 32px 24px;
+    transition: transform .2s;
+    width: 38px;
 }
 
 .logo:hover{
-    transform: rotate(361deg);
+    transform: rotate(360deg);
 }
 
-/* navigation bar */
-.nav{
-    padding: 15px 10px;
-    background: #0065c3;
-    width: 100%;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@media screen and (min-width: 600px){
+    .logo{
+        margin: 25px 15px;
+        height: 50px;
+        width: 50px;
+    }
 }
 
-.products{
-    font-size: 1.6rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
+@media screen and (min-width: 1024px){
+    .logo{
+        margin: 15px 27px;
+        height: 60px;
+        width: 60px;
+    }
 }
