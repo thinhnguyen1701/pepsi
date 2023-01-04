@@ -1,56 +1,56 @@
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     margin: 0;
     font-size: 1rem;
 }
 
 /* chevron icon */
 .chevron::before {
-	border-style: solid;
-	border-width: 0.25em 0.25em 0 0;
-	content: '';
-	display: inline-block;
-	height: 0.25em;
-	left: 0.15em;
-	position: relative;
-	top: 0.15em;
-	transform: rotate(-45deg);
-	vertical-align: top;
-	width: 0.25em;
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+    content: '';
+    display: inline-block;
+    height: 0.25em;
+    left: 0.15em;
+    position: relative;
+    top: 0.15em;
+    transform: rotate(-45deg);
+    vertical-align: top;
+    width: 0.25em;
     margin-top: 4px;
     margin-left: 4px;
 }
 
-.chevron::before{
+.chevron::before {
     top: 0;
     transform: rotate(135deg);
 }
 
 /* logo */
-.logo{
+.logo {
     height: 38px;
     /* margin: 32px 24px; */
     transition: transform .2s;
     width: 38px;
 }
 
-.logo:hover{
+.logo:hover {
     transform: rotate(360deg);
 }
 
-@media screen and (min-width: 600px){
-    .logo{
+@media screen and (min-width: 600px) {
+    .logo {
         /* margin: 25px 15px; */
         height: 50px;
         width: 50px;
     }
 }
 
-@media screen and (min-width: 1024px){
-    .logo{
+@media screen and (min-width: 1024px) {
+    .logo {
         /* margin: 15px 27px; */
         height: 60px;
         width: 60px;
@@ -58,7 +58,7 @@ body{
 }
 
 /* products menu */
-.products{
+.products {
     color: white;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
@@ -67,20 +67,23 @@ body{
 }
 
 /* menu toggle */
-.menuToggle{
+.menuToggle {
     display: inline-block;
     cursor: pointer;
 }
 
-.line1, .line2, .line3{
+.line1,
+.line2,
+.line3 {
     width: 30px;
     height: 4px;
-    background: white;
+    background: black;
     margin: 6px;
 }
 
 /* navigation bar */
-.nav{
+
+.nav {
     display: flex;
     background: #0065c3;
     justify-content: space-between;
@@ -89,8 +92,111 @@ body{
     font-size: 1.6rem;
 }
 
-@media screen and (min-width: 1024px){
-    .nav{
+@media screen and (min-width: 1024px) {
+    .nav {
         font-size: 1.4rem;
     }
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 01/03/2022 */
+/* section */
+section{
+    /* display: flex; */
+    flex-direction: column;
+    /* align-items: center; */
+}
+/* frame #1 */
+.frame-one {
+    height: 100vh;
+    width: 100%;
+    background: url(../images/mobile-background@2x.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    /* background-position: -8px 0; */
+}
+
+.frame-one__pepsi-title {
+    background: url(../images/pepsi-title.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 10vw;
+    right: 12.8vw;
+    /* height: 30vh;
+    width: 70vw; */
+    width: 70vw;
+    height: 56vw;
+}
+
+.frame-one__video{
+    background: url(../images/thumbnail@3x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 53.59vw;
+    height: 29.28vw;
+    position: absolute;
+    top: 73vw;
+    right: 23.3vw;
+}
+
+.frame-one__video__image{
+    /* position: absolute; */
+    /* top: 73vw; */
+    /* right: 23.3vw; */
+    width: 53.59vw;
+    height: 29.28vw;
+}
+
+.frame-one__video__background{
+    align-items: center;
+    background-color: #0065c3c7;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    justify-content: center;
+    /* padding: 18px 0 5px 0; */
+    padding-top: 15px;
+    /* position: absolute; */
+    /* right: 33vw; */
+    text-transform: uppercase;
+    /* top: 74vw; */
+    /* height: 20vw;
+    width: 35vw; */
+    width: 111px;
+    height: 70px;
+    z-index: 1;
+}
+
+.frame-one__video__playBtnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+.frame-one__video__playBtn{
+    width: 20px;
+    height: 20px;
+    background: white;
+    /* z-index: 1; */
+    margin-left: 4px;
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
 }
