@@ -265,6 +265,7 @@ section {
     position: absolute;
     bottom: 27vw;
     left: 7.7vw;
+    z-index: 2;
 }
 
 .frame-one__BCC {
@@ -420,6 +421,11 @@ section {
 }
 
 @media screen and (min-width: 1280px){
+    .frame-one__video{
+        width: 306px;
+        height: 170px;
+    }
+
     .frame-one__CSC{
         width: 447px;
         height: 511px;
@@ -436,5 +442,63 @@ section {
 }
 
 @media screen and (min-width: 1366px){
-    
+    .frame-one__video{
+        width: 313px;
+        height: 174px;
+    }
+
+    .frame-one__LTO{
+        width: 181px;
+        height: 94px;
+    }
+
+    .frame-one__CSC{
+        width: 485px;
+        height: 554px;
+        left: 0;
+        bottom: 14px;
+    }
+
+    .frame-one__BCC{
+        width: 485px;
+        height: 554px;
+        right: 0;
+        bottom: -20px;
+    }
+}
+
+@media screen and (min-width: 1920px){
+    .frame-one{
+        height: 980px;
+    }
+
+    .frame-one__pepsi-title{
+        width: 427px;
+        height: 583px;
+    }
+
+    .frame-one__video{
+        width: 438px;
+        height: 242px;
+        margin-top: 55px;
+    }
+
+    .frame-one__LTO{
+        width: 266px;
+        height: 138px;
+    }
+
+    .frame-one__CSC{
+        width: 684px;
+        height: 782px;
+        bottom: 56px;
+        left: 30px;
+    }
+
+    .frame-one__BCC{
+        width: 684px;
+        height: 782px;
+        bottom: 6px;
+        right: 30px;
+    }
 }
