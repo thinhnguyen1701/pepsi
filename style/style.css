@@ -106,23 +106,26 @@ body {
 
 /* 01/03/2022 */
 /* section */
-section{
+section {
     /* display: flex; */
     flex-direction: column;
     /* align-items: center; */
 }
+
 /* frame #1 */
 .frame-one {
-    height: 100vh;
-    width: 100%;
-    background: url(../images/mobile-background@2x.png);
+    /* height: 100vh; */
+    height: 190vw;
+    background-image: url(../images/floor.png), url(../images/mobile-background@2x.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
+    background-position: bottom -100px center, top center;
+    position: relative;
     /* background-position: -8px 0; */
 }
 
 .frame-one__pepsi-title {
-    background: url(../images/pepsi-title.png);
+    background-image: url(../images/pepsi-title.png);
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -134,11 +137,10 @@ section{
     height: 56vw;
 }
 
-.frame-one__video{
-    background: url(../images/thumbnail@3x.png);
+.frame-one__video {
+    background-image: url(../images/thumbnail@3x.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,9 +149,11 @@ section{
     position: absolute;
     top: 73vw;
     right: 23.3vw;
+    cursor: pointer;
+    z-index: 1;
 }
 
-.frame-one__video__image{
+.frame-one__video__image {
     /* position: absolute; */
     /* top: 73vw; */
     /* right: 23.3vw; */
@@ -157,7 +161,7 @@ section{
     height: 29.28vw;
 }
 
-.frame-one__video__background{
+.frame-one__video__background {
     align-items: center;
     background-color: #0065c3c7;
     color: white;
@@ -180,7 +184,7 @@ section{
     z-index: 1;
 }
 
-.frame-one__video__playBtnContainer{
+.frame-one__video__playBtnContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,11 +196,245 @@ section{
     z-index: 1;
 }
 
-.frame-one__video__playBtn{
+.frame-one__video__playBtn {
     width: 20px;
     height: 20px;
     background: white;
     /* z-index: 1; */
     margin-left: 4px;
     clip-path: polygon(100% 50%, 0 0, 0 100%);
+}
+
+.frame-one__LTO {
+    /* background-image: url(../images/mobile-lto-button@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 16vw;
+    top: 107vw;
+    z-index: 1;
+    /* z-index: 2; */
+    /* border: 2px solid black; */
+}
+
+.frame-one__LTO__logo {
+    width: 100%;
+    /* border: 1px dotted tomato; */
+}
+
+
+/* 01/06/2022 */
+.frame-one__footer {
+    /* background-image: url(../images/mobile-floor.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    height: 60vw;
+    position: absolute;
+    bottom: 0;
+    z-index: 0; */
+}
+
+/* .frame-one__footer__img {
+    width: 170px;
+    height: 200px;
+}
+
+.frame-one__footer__img:first-child {
+    position: absolute;
+    bottom: 10px;
+    left: 8vw;
+}
+
+.frame-one__footer__img:last-child {
+    position: absolute;
+    right: 4vw;
+    bottom: 0;
+} */
+
+/* cream soda */
+.frame-one__CSC {
+    background-image: url(../images/cream-soda@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top;
+    width: 52.18vw;
+    height: 59.68vw;
+    position: absolute;
+    bottom: 27vw;
+    left: 7.7vw;
+}
+
+.frame-one__BCC {
+    position: absolute;
+    right: 1.8vw;
+    bottom: 2vw;
+    background-image: url(../images/black-cherry@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-position: right bottom; */
+    width: 52.18vw;
+    height: 59.68vw;
+    z-index: 2;
+}
+
+@media screen and (min-width: 390px) {
+    .frame-one{
+        height: 210vw;
+    }
+
+    .frame-one__pepsi-title {
+        /* top: 10vw; */
+        right: 15vw;
+        width: 65vw;
+        height: 51vw;
+    }
+
+    .frame-one__video{
+        top: 65vw;
+    }
+
+    .frame-one__LTO__logo{
+        display: none;
+    }
+
+    .frame-one__LTO{
+        background-image: url(../images/mobile-lto-button@2x.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 26vw;
+        height: 27vw;
+        top: 97.5vw;
+        right: 12vw;
+    }
+
+    .frame-one__CSC{
+        width: 62.05vw;
+        height: 71.03vw;
+        left: 1vw;
+        bottom: 40vw;
+    }
+
+    .frame-one__BCC{
+        width: 61.78vw;
+        height: 66.15vw;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .frame-one{
+        background-image: url(../images/floor@3x.png), url(../images/tablet-background@3x.png);
+        background-repeat: no-repeat;
+        background-position: bottom -20vw center, top center;
+        height: 130vw;
+    }
+
+    .frame-one__pepsi-title{
+        background-image: url(../images/pepsi-title@2x.png);
+        background-repeat: no-repeat;
+        width: 58vw;
+        height: 44vw;
+        right: 18vw;
+    }
+
+    .frame-one__video{
+        width: 34.98vw;
+        height: 19.4vw;
+        top: 57vw;
+        right: 32.3vw;
+    }
+
+    .frame-one__LTO{
+        background-image: url(../images/desktop-lto-button@3x.png);
+        background-repeat: no-repeat;
+        width: 23.47vw;
+        height: 12.1vw;
+        top: 2rem;
+        left: 0;
+    }
+    
+    .frame-one__CSC{
+        width: 45.63vw;
+        height: 52.22vw;
+        bottom: 1rem;
+        left: 2rem;
+    }
+
+    .frame-one__BCC{
+        width: 45.63vw;
+        height: 52.22vw;
+        bottom: -1.6rem;
+        right: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .frame-one{
+        background-image: url(../images/background-desktop@3x.png);
+        background-size: auto 100%;
+        background-position: top;
+        height: 668px;
+        display: flex;
+    }
+
+    .frame-one__pepsi-title{
+        background-image: url(../images/pepsi-title@3x.png);
+        width: 289px;
+        height: 395px;
+        align-self: center;
+        margin-top: 30px;
+        position: unset;
+    }
+
+    .frame-one__video{
+        margin-top: 30px;
+        width: 268px;
+        height: 149px;
+        position: unset;
+        align-self: center;
+    }
+
+    .frame-one__LTO{
+        /* display: none; */
+        width: 181px;
+        height: 93px;
+    }
+    
+    .frame-one__CSC{
+        /* display:none; */
+        width: 404px;
+        height: 464px;
+        bottom: 0;
+        left: -3.7vw;
+    }
+
+    .frame-one__BCC{
+        /* display:none; */
+        width: 404px;
+        height: 464px;
+        bottom: -30px;
+        right: -3.7vw;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .frame-one__CSC{
+        width: 447px;
+        height: 511px;
+        left: 33px;
+        bottom: 24px;
+    }
+
+    .frame-one__BCC{
+        width: 447px;
+        height: 511px;
+        right: 32px;
+        bottom: -6px;
+    }
+}
+
+@media screen and (min-width: 1366px){
+    
 }
