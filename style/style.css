@@ -5,6 +5,15 @@ html {
 body {
     margin: 0;
     font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* typography */
+h2{
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 /* chevron icon */
@@ -282,7 +291,7 @@ section {
 }
 
 @media screen and (min-width: 390px) {
-    .frame-one{
+    .frame-one {
         height: 210vw;
     }
 
@@ -293,15 +302,15 @@ section {
         height: 51vw;
     }
 
-    .frame-one__video{
+    .frame-one__video {
         top: 65vw;
     }
 
-    .frame-one__LTO__logo{
+    .frame-one__LTO__logo {
         display: none;
     }
 
-    .frame-one__LTO{
+    .frame-one__LTO {
         background-image: url(../images/mobile-lto-button@2x.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -311,28 +320,28 @@ section {
         right: 12vw;
     }
 
-    .frame-one__CSC{
+    .frame-one__CSC {
         width: 62.05vw;
         height: 71.03vw;
         left: 1vw;
         bottom: 40vw;
     }
 
-    .frame-one__BCC{
+    .frame-one__BCC {
         width: 61.78vw;
         height: 66.15vw;
     }
 }
 
-@media screen and (min-width: 768px){
-    .frame-one{
+@media screen and (min-width: 768px) {
+    .frame-one {
         background-image: url(../images/floor@3x.png), url(../images/tablet-background@3x.png);
         background-repeat: no-repeat;
         background-position: bottom -20vw center, top center;
         height: 130vw;
     }
 
-    .frame-one__pepsi-title{
+    .frame-one__pepsi-title {
         background-image: url(../images/pepsi-title@2x.png);
         background-repeat: no-repeat;
         width: 58vw;
@@ -340,14 +349,14 @@ section {
         right: 18vw;
     }
 
-    .frame-one__video{
+    .frame-one__video {
         width: 34.98vw;
         height: 19.4vw;
         top: 57vw;
         right: 32.3vw;
     }
 
-    .frame-one__LTO{
+    .frame-one__LTO {
         background-image: url(../images/desktop-lto-button@3x.png);
         background-repeat: no-repeat;
         width: 23.47vw;
@@ -355,15 +364,15 @@ section {
         top: 2rem;
         left: 0;
     }
-    
-    .frame-one__CSC{
+
+    .frame-one__CSC {
         width: 45.63vw;
         height: 52.22vw;
         bottom: 1rem;
         left: 2rem;
     }
 
-    .frame-one__BCC{
+    .frame-one__BCC {
         width: 45.63vw;
         height: 52.22vw;
         bottom: -1.6rem;
@@ -371,8 +380,8 @@ section {
     }
 }
 
-@media screen and (min-width: 1024px){
-    .frame-one{
+@media screen and (min-width: 1024px) {
+    .frame-one {
         background-image: url(../images/background-desktop@3x.png);
         background-size: auto 100%;
         background-position: top;
@@ -380,7 +389,7 @@ section {
         display: flex;
     }
 
-    .frame-one__pepsi-title{
+    .frame-one__pepsi-title {
         background-image: url(../images/pepsi-title@3x.png);
         width: 289px;
         height: 395px;
@@ -389,7 +398,7 @@ section {
         position: unset;
     }
 
-    .frame-one__video{
+    .frame-one__video {
         margin-top: 30px;
         width: 268px;
         height: 149px;
@@ -397,13 +406,13 @@ section {
         align-self: center;
     }
 
-    .frame-one__LTO{
+    .frame-one__LTO {
         /* display: none; */
         width: 181px;
         height: 93px;
     }
-    
-    .frame-one__CSC{
+
+    .frame-one__CSC {
         /* display:none; */
         width: 404px;
         height: 464px;
@@ -411,7 +420,7 @@ section {
         left: -3.7vw;
     }
 
-    .frame-one__BCC{
+    .frame-one__BCC {
         /* display:none; */
         width: 404px;
         height: 464px;
@@ -420,20 +429,20 @@ section {
     }
 }
 
-@media screen and (min-width: 1280px){
-    .frame-one__video{
+@media screen and (min-width: 1280px) {
+    .frame-one__video {
         width: 306px;
         height: 170px;
     }
 
-    .frame-one__CSC{
+    .frame-one__CSC {
         width: 447px;
         height: 511px;
         left: 33px;
         bottom: 24px;
     }
 
-    .frame-one__BCC{
+    .frame-one__BCC {
         width: 447px;
         height: 511px;
         right: 32px;
@@ -441,25 +450,25 @@ section {
     }
 }
 
-@media screen and (min-width: 1366px){
-    .frame-one__video{
+@media screen and (min-width: 1366px) {
+    .frame-one__video {
         width: 313px;
         height: 174px;
     }
 
-    .frame-one__LTO{
+    .frame-one__LTO {
         width: 181px;
         height: 94px;
     }
 
-    .frame-one__CSC{
+    .frame-one__CSC {
         width: 485px;
         height: 554px;
         left: 0;
         bottom: 14px;
     }
 
-    .frame-one__BCC{
+    .frame-one__BCC {
         width: 485px;
         height: 554px;
         right: 0;
@@ -467,38 +476,72 @@ section {
     }
 }
 
-@media screen and (min-width: 1920px){
-    .frame-one{
+@media screen and (min-width: 1920px) {
+    .frame-one {
         height: 980px;
     }
 
-    .frame-one__pepsi-title{
+    .frame-one__pepsi-title {
         width: 427px;
         height: 583px;
     }
 
-    .frame-one__video{
+    .frame-one__video {
         width: 438px;
         height: 242px;
         margin-top: 55px;
     }
 
-    .frame-one__LTO{
+    .frame-one__LTO {
         width: 266px;
         height: 138px;
     }
 
-    .frame-one__CSC{
+    .frame-one__CSC {
         width: 684px;
         height: 782px;
         bottom: 56px;
         left: 30px;
     }
 
-    .frame-one__BCC{
+    .frame-one__BCC {
         width: 684px;
         height: 782px;
         bottom: 6px;
         right: 30px;
     }
+}
+
+/* 01/07/2023 */
+/* frame two */
+.frame-two {
+    background-image: url(../images/frame-two-background.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame-two__introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frame-two__title{
+    width: 50vw;
+}
+
+.frame-two__img-container{
+    display: flex;
+    align-items: center;
+    width: 50vw;
+}
+
+.frame-two__img{
+    width: 100%;
 }
