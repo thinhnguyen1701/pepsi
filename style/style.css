@@ -655,11 +655,12 @@ section {
     width: 60vw;
 }
 
+/* found the problem, we should group video and title together instead*/
 .frame-three__video{
     background-image: url(../images/frame-three-videoBackground.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 53.59vw;
+    width: auto;
     height: 60vw;
     display: flex;
     justify-content: center;
