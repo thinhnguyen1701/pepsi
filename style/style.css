@@ -122,6 +122,51 @@ section {
     /* align-items: center; */
 }
 
+/* video button */
+.video{
+    align-items: center;
+    background-color: #0065c3c7;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    justify-content: center;
+    /* padding: 18px 0 5px 0; */
+    padding-top: 15px;
+    /* position: absolute; */
+    /* right: 33vw; */
+    text-transform: uppercase;
+    /* top: 74vw; */
+    /* height: 20vw;
+    width: 35vw; */
+    width: 111px;
+    height: 70px;
+    z-index: 1;
+}
+
+.video__playBtnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+.video__playBtn {
+    width: 20px;
+    height: 20px;
+    background: white;
+    /* z-index: 1; */
+    margin-left: 4px;
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+}
+
 /* frame #1 */
 .frame-one {
     /* height: 100vh; */
@@ -169,50 +214,6 @@ section {
     /* right: 23.3vw; */
     width: 53.59vw;
     height: 29.28vw;
-}
-
-.frame-one__video__background {
-    align-items: center;
-    background-color: #0065c3c7;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3rem;
-    font-weight: bold;
-    justify-content: center;
-    /* padding: 18px 0 5px 0; */
-    padding-top: 15px;
-    /* position: absolute; */
-    /* right: 33vw; */
-    text-transform: uppercase;
-    /* top: 74vw; */
-    /* height: 20vw;
-    width: 35vw; */
-    width: 111px;
-    height: 70px;
-    z-index: 1;
-}
-
-.frame-one__video__playBtnContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid white;
-    border-radius: 100%;
-    width: 35px;
-    height: 35px;
-    margin-bottom: 10px;
-    z-index: 1;
-}
-
-.frame-one__video__playBtn {
-    width: 20px;
-    height: 20px;
-    background: white;
-    /* z-index: 1; */
-    margin-left: 4px;
-    clip-path: polygon(100% 50%, 0 0, 0 100%);
 }
 
 .frame-one__LTO {
@@ -635,3 +636,4 @@ section {
     padding: 1rem 3rem;
     font-size: 1.4rem;
 }
+
