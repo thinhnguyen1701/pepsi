@@ -238,34 +238,6 @@ section {
 
 
 /* 01/06/2022 */
-.frame-one__footer {
-    /* background-image: url(../images/mobile-floor.png);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    width: 100%;
-    height: 60vw;
-    position: absolute;
-    bottom: 0;
-    z-index: 0; */
-}
-
-/* .frame-one__footer__img {
-    width: 170px;
-    height: 200px;
-}
-
-.frame-one__footer__img:first-child {
-    position: absolute;
-    bottom: 10px;
-    left: 8vw;
-}
-
-.frame-one__footer__img:last-child {
-    position: absolute;
-    right: 4vw;
-    bottom: 0;
-} */
-
 /* cream soda */
 .frame-one__CSC {
     background-image: url(../images/cream-soda@2x.png);
@@ -615,17 +587,6 @@ section {
     }
 }
 
-/* @media screen and (min-width: 1366px){
-    .frame-two__introduction h2{
-        font-size: 2.4rem;
-    }
-
-    .frame-two__title{
-        width: 439px;
-    }
-
-} */
-
 /* button */
 .btn {
     text-decoration: none;
@@ -735,3 +696,5 @@ section {
         margin-top: 27px;
     }
 }
+
+/* frame four */
