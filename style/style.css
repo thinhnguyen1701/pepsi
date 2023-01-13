@@ -838,7 +838,16 @@ section {
         background-color: #0065c3;
     }
 
+    .frame-four__backgroundGroup1{
+        background-image: url(../images/frame-four-background1.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        width: 196vw;
+        height: 44vw;
+    }
+    
     .frame-four__background1{
-        height: 100%;
+        display: none;
     }
 }
