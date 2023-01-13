@@ -698,7 +698,7 @@ section {
 }
 
 /* frame four */
-.frame-four{
+/* .frame-four{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -759,4 +759,86 @@ section {
     padding: 10px;
     text-align: center;
     text-transform: uppercase;
+} */
+
+/* updated frame four: 01/13/2023 */
+.frame-four{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 163vw;
+}
+
+.frame-four__backgroundGroup1{
+    position: relative;
+}
+
+.frame-four__background1{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.frame-four__hashTag{
+    width: 30%;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
+
+.frame-four__backgroundGroup2{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0;
+    background-color: #0065c3;
+    width: 100%;
+}
+
+.frame-four__backgroundGroup2 ul{
+    margin: 20px;
+    padding: 0;
+}
+
+.frame-four__background2,
+.frame-four__background3{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.frame-four__backgroundImg{
+    width: 100%;
+}
+
+.frame-four__BWP{
+    background-color: #1437bf;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+/* positioning */
+.position-abs-center{
+    position: absolute;
+}
+
+@media screen and (min-width: 1024px){
+    .frame-four{
+        flex-direction: row-reverse;
+        height: auto;
+        background-color: #0065c3;
+    }
+
+    .frame-four__background1{
+        height: 100%;
+    }
 }
