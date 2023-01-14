@@ -851,3 +851,23 @@ section {
         display: none;
     }
 }
+
+/* frame five: 01/13/2023 */
+.frame-five{
+    background-image: url(../images/frame-five-background.jpeg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+    height: 120vw;
+}
+
+.frame-five__background-decoraion2{
+    background-image: url(../images/frame-five-background-decoration2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 79vw;
+    width: 36vw;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
