@@ -857,17 +857,76 @@ section {
     background-image: url(../images/frame-five-background.jpeg);
     background-repeat: no-repeat;
     background-position: top center;
+    background-size: cover ;
     position: relative;
-    height: 120vw;
+    height: 174vw;
 }
 
-.frame-five__background-decoraion2{
+.frame-five__background-decoration1{
+    background-image: url(../images/frame-five-background-decoration1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: contain;
+    height: 17vw;
+    width: 21vw;
+    position: absolute;
+    right: 6vw;
+    top: 4vw;
+}
+
+.frame-five__background-decoration2{
     background-image: url(../images/frame-five-background-decoration2.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 79vw;
-    width: 36vw;
+    height: 139vw;
+    width: 63vw;
     position: absolute;
     right: 0;
     bottom: 0;
+}
+
+.frame-five__background-decoration3{
+    background-image: url(../images/frame-five-background-decoration3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 57vw;
+    width: 82vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.frame-five__background-decoration4{
+    background-image: url(../images/frame-five-background-decoration4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 21vw;
+    width: 25vw;
+    position: absolute;
+    left: 6vw;
+    bottom: 66vw;
+}
+
+.frame-five__introduction{
+    padding: 5vw 0 0 5vw;
+}
+
+.frame-five__heading{
+    width: 60vw;
+}
+
+.frame-five__video{
+    background-image: url(../images/frame-five-video-background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 47vw;
+    height: 26vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame-five__video__background{
+    width: 5vw;
 }
