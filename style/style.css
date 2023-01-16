@@ -762,7 +762,7 @@ section {
 } */
 
 /* updated frame four: 01/13/2023 */
-.frame-four{
+.frame-four {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -770,24 +770,24 @@ section {
     height: 163vw;
 }
 
-.frame-four__backgroundGroup1{
+.frame-four__backgroundGroup1 {
     position: relative;
 }
 
-.frame-four__background1{
+.frame-four__background1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.frame-four__hashTag{
+.frame-four__hashTag {
     width: 30%;
     position: absolute;
     right: 0;
     bottom: 10px;
 }
 
-.frame-four__backgroundGroup2{
+.frame-four__backgroundGroup2 {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -796,26 +796,26 @@ section {
     width: 100%;
 }
 
-.frame-four__backgroundGroup2 ul{
+.frame-four__backgroundGroup2 ul {
     margin: 20px;
     padding: 0;
 }
 
 .frame-four__background2,
-.frame-four__background3{
+.frame-four__background3 {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
-.frame-four__backgroundImg{
+.frame-four__backgroundImg {
     width: 100%;
 }
 
-.frame-four__BWP{
+.frame-four__BWP {
     background-color: #1437bf;
     color: white;
     font-size: 1.3rem;
@@ -827,18 +827,18 @@ section {
 }
 
 /* positioning */
-.position-abs-center{
+.position-abs-center {
     position: absolute;
 }
 
-@media screen and (min-width: 1024px){
-    .frame-four{
+@media screen and (min-width: 1024px) {
+    .frame-four {
         flex-direction: row-reverse;
         height: auto;
         background-color: #0065c3;
     }
 
-    .frame-four__backgroundGroup1{
+    .frame-four__backgroundGroup1 {
         background-image: url(../images/frame-four-background1.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -846,23 +846,24 @@ section {
         width: 196vw;
         height: 44vw;
     }
-    
-    .frame-four__background1{
+
+    .frame-four__background1 {
         display: none;
     }
 }
 
 /* frame five: 01/13/2023 */
-.frame-five{
+.frame-five {
     background-image: url(../images/frame-five-background.jpeg);
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: cover ;
+    background-size: cover;
     position: relative;
     height: 174vw;
 }
 
-.frame-five__background-decoration1{
+/* Mango top right */
+.frame-five__background-decoration1 {
     background-image: url(../images/frame-five-background-decoration1.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -874,7 +875,7 @@ section {
     top: 4vw;
 }
 
-.frame-five__background-decoration2{
+.frame-five__background-decoration2 {
     background-image: url(../images/frame-five-background-decoration2.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -885,7 +886,7 @@ section {
     bottom: 0;
 }
 
-.frame-five__background-decoration3{
+.frame-five__background-decoration3 {
     background-image: url(../images/frame-five-background-decoration3.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -897,7 +898,8 @@ section {
     z-index: 1;
 }
 
-.frame-five__background-decoration4{
+/* Mango bottom left */
+.frame-five__background-decoration4 {
     background-image: url(../images/frame-five-background-decoration4.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -908,15 +910,15 @@ section {
     bottom: 66vw;
 }
 
-.frame-five__introduction{
+.frame-five__introduction {
     padding: 5vw 0 0 5vw;
 }
 
-.frame-five__heading{
+.frame-five__heading {
     width: 60vw;
 }
 
-.frame-five__video{
+.frame-five__video {
     background-image: url(../images/frame-five-video-background.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -927,6 +929,106 @@ section {
     align-items: center;
 }
 
-.frame-five__video__background{
+.frame-five__video__background {
     width: 5vw;
+}
+
+@media screen and (min-width: 768px) {
+
+    .frame-five {
+        height: 127vw;
+    }
+
+    .frame-five__background-decoration1,
+    .frame-five__background-decoration4 {
+        display: none;
+    }
+
+    .frame-five__background-decoration2 {
+        background-image: url(../images/frame-five-background-decoration2@2x.png);
+        height: 116vw;
+        width: 60vw;
+        position: absolute;
+        right: 0;
+        top: 11vw;
+        bottom: unset;
+    }
+
+    .frame-five__background-decoration3 {
+        background-image: url(../images/frame-five-background-decoration3@2x.png);
+        height: 55vw;
+        width: 88vw;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .frame-five__heading {
+        width: 52vw;
+    }
+
+    .frame-five__video {
+        width: 31vw;
+        height: 18vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .frame-five {
+        height: 55vw;
+        overflow: hidden;
+    }
+
+    .frame-five__background-decoration1 {
+        background-image: url(../images/frame-five-background-decoration1-desktop.png);
+        width: 38.6vw;
+        display: initial;
+        top: unset;
+        bottom: 0;
+        right: 0;
+    }
+
+    .frame-five__background-decoration2 {
+        background-image: url(../images/frame-five-background-decoration2-desktop@2x.png);
+        height: 55vw;
+        width: 65vw;
+        bottom: 0;
+        top: unset;
+        z-index: 1;
+    }
+
+    .frame-five__background-decoration3 {
+        background-image: url(../images/frame-five-background-decoration3-desktop@2x.png);
+        height: 44vw;
+        width: 102vw;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 0;
+    }
+
+    .frame-five__background-decoration4 {
+        display: initial;
+        background-image: url(../images/frame-five-background-decoration4-dekstop.png);
+        width: 29vw;
+        height: 3vw;
+        bottom: 1vw;
+        left: 3vw;
+    }
+
+    .frame-five__introduction{
+        position: absolute;
+        padding: 2vw 0 0 3vw;
+    }
+
+    .frame-five__heading{
+        width: 29vw;
+    }
+
+    .frame-five__video{
+        width: 19vw;
+        height: 11vw;
+        margin-top: 7vw;
+    }
 }
