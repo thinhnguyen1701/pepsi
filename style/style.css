@@ -1032,3 +1032,8 @@ section {
         margin-top: 7vw;
     }
 }
+
+/* frame-six */
+.frame-six__video{
+    width: 100%;
+}
