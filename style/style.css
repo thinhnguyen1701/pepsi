@@ -1037,3 +1037,54 @@ section {
 .frame-six__video{
     width: 100%;
 }
+
+/* frame-seven */
+.frame-seven{
+    background-image: url(../images/frame-seven-background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 116vw;
+}
+
+.frame-seven__heading{
+    background-image: url(../images/frame-seven-heading.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 73vw;
+    height: 26vw;
+}
+
+.frame-seven__img{
+    background-image: url(../images/frame-seven-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 67vw;
+    height: 61vw;
+    margin-top: 11vw;
+}
+
+@media screen and (min-width: 1024px){
+    .frame-seven{
+        background-image: url(../images/frame-seven-background@2x.jpeg);
+        flex-direction: row-reverse;
+        height: 56vw;
+        padding-right: 4vw;
+    }
+
+    .frame-seven__heading{
+        background-image: url(../images/frame-seven-heading@2x.png);
+        width: 74vw;
+        height: 27vw;
+    }
+
+    .frame-seven__img{
+        background-image: url(../images/frame-seven-img@2x.png);
+        width: 110vw;
+        height: 52vw;
+        margin-top: 4vw;
+    }
+}
