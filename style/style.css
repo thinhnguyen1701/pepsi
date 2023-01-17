@@ -1170,3 +1170,65 @@ section {
         text-align: left;
     }
 }
+
+/* frame-nine */
+.frame-nine{
+    padding: 0 5vw;
+}
+
+.frame-nine__heading{
+    color: #0065c3;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.photoGallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "twitter facebook"
+                         "instagram youtube"
+                         "tiktok tiktok";
+}
+
+.frame-nine__img-container{
+    overflow: hidden;
+    position: relative;
+}
+
+.icon{
+    position: absolute;
+    width: 6vw;
+    bottom: 2vw;
+    left: 2vw;
+}
+
+.frame-nine__img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+}
+
+.frame-nine__img:hover{
+    transform: rotate(5deg) scale(1.2);
+}
+
+.frame-nine__img-container:last-child{
+    grid-area: tiktok;
+}
+
+@media screen and (min-width: 1024px){
+    .photoGallery{
+        grid-template-columns: repeat(5,1fr);
+        /* grid-template-areas: unset; */
+    }
+
+    .icon{
+        width: 2vw;
+        left: 1vw;
+        bottom: 1vw;
+    }
+
+    .frame-nine__img-container:last-child{
+        grid-area: unset;
+    }
+}
