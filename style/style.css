@@ -704,70 +704,6 @@ section {
     }
 }
 
-/* frame four */
-/* .frame-four{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #0065c3;
-    height: 164vw;
-}
-
-.frame-four__backgroundGroup1{
-    position: relative;
-}
-
-.frame-four__background1{
-    width: 100%;
-    object-fit: cover;
-}
-
-.frame-four__hashTag{
-    width: 30%;
-    position: absolute;
-    right: 0;
-    bottom: 10px;
-}
-
-.frame-four__backgroundGroup2{
-    list-style: none;
-    margin: 0;
-    padding: 5vw 0;
-    height: 100%;
-}
-
-.frame-four__background2,
-.frame-four__background3{
-    width: 95vw;
-    height: 50vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.frame-four__background2{
-    background-image: url(../images/frame-four-background2.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover; 
-}
-
-.frame-four__background3{
-    background-image: url(../images/frame-four-background3.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.frame-four__BWP{
-    background-color: #1437bf;
-    color: white;
-    font-size: 1.3rem;
-    font-weight: bold;
-    padding: 10px;
-    text-align: center;
-    text-transform: uppercase;
-} */
-
 /* updated frame four: 01/13/2023 */
 .frame-four {
     display: flex;
@@ -1230,5 +1166,140 @@ section {
 
     .frame-nine__img-container:last-child{
         grid-area: unset;
+    }
+}
+
+/* footer */
+.footer-mobile{
+    width: 100%;
+}
+
+.footer{
+    background: #0065c3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 2vw; */
+}
+
+.list{
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.footer-mobile .list{
+    margin: 8vw;
+}
+
+.list-item{
+    line-height: 2.3;
+}
+
+.list-item a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.4;
+    font-size: 1.3rem;
+}
+
+.footer__bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid white;
+    padding-top: 2vw;
+}
+
+.footer__bottom .btn{
+    font-size: 1.2rem;
+}
+/* .pepsi-logo img{
+    width: 100%;
+} */
+
+.footer__social-group,
+.pepsi-logo{
+    margin: 0 2vw;
+}
+
+.footer__bottom .list{
+    margin: 2vw 0;
+}
+
+.list-inline{
+    display: flex;
+    align-items: center;
+}
+
+.social-icon{
+    width: 25px;
+}
+
+.list-item:nth-child(even){
+    margin: 0 10px;
+}
+
+/* pepsi logo */
+.pepsi-logo-container{
+    width: 40px;
+}
+
+.pepsi-logo{
+    width: 100%;
+    transition: transform 0.4s;
+}
+
+.pepsi-logo:hover{
+    transform: rotate(365deg);
+}
+
+.footer-desktop{
+    display: none;
+}
+
+/* footer desktop */
+@media screen and (min-width: 1024px){
+    .footer-mobile{
+        display: none;
+    }
+
+    .footer-desktop{
+        background-color: #0065c3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 40px 0;
+    }
+    
+    .links-list{
+        width: auto;
+        display: flex;
+    }
+    
+    .links-list .list{
+        margin: 0;
+        text-align: left;
+    }
+    
+    .links-list .list:nth-child(even){
+        margin: 0 40px;
+    }
+    
+    .list-item:nth-child(even){
+        margin: 0;
+    }
+    
+    .pepsi-logo-container{
+        width: 8vw;
+    }
+    
+    .footer-desktop .list-inline{
+        justify-content: space-between;
     }
 }
