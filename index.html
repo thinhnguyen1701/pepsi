@@ -10,145 +10,65 @@
 </head>
 
 <body>
-    <footer class="footer">
-        <div class="footer-mobile">
-            <ul class="list">
-                <li class="list-item">
-                    <a href="#contactUs">contact us</a>
-                </li>
-                <li class="list-item">
-                    <a href="#condition">terms & conditions</a>
-                </li>
-                <li class="list-item">
-                    <a href="#">privacy policy</a>
-                </li>
-                <li class="list-item">
-                    <a href="#">copyright</a>
-                </li>
-                <li class="list-item">
-                    <a href="#">product facts</a>
-                </li>
-                <li class="list-item">
-                    <a href="#">store locator</a>
-                </li>
-                <li class="list-item">
-                    <a href="#">serve pepsi</a>
-                </li>
-                <li class="list-item">
-                    <a href="#">about our ads</a>
-                </li>
-                <li class="list-item">
-                    <a href="#">careers</a>
-                </li>
-            </ul>
-            <div class="footer__bottom">
-                <span class="pepsi-logo-container">
+    <header>
+        <nav class="nav">
+            <div class="nav__mobile">
+                <div class="nav-logo">
                     <img class="pepsi-logo" src="images/pepsi-logo.png" alt="">
-                </span>
-                <div class="footer__social-group">
-                    <button class="btn">subscribe to newsletter</button>
-                    <ul class="list list-inline">
-                        <li class="list-item">
-                            <a href="#">
-                                <img class="social-icon" src="images/icon-twitter.svg" alt="">
-                            </a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#">
-                                <img class="social-icon" src="images/icon-facebook.svg" alt="">
-                            </a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#">
-                                <img class="social-icon" src="images/icon-instagram.svg" alt="">
-                            </a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#">
-                                <img class="social-icon" src="images/icon-youtube.svg" alt="">
-                            </a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#">
-                                <img class="social-icon" src="images/icon-tiktok.svg" alt="">
-                            </a>
-                        </li>
-                    </ul>
                 </div>
+                <div id="productList">
+                    view products
+                    <span class="chevron"></span>
+                </div>
+                <a href="javascript:void(0);" class="menuToggle" onclick="menu()">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </a>
             </div>
-        </div>
-
-        <div class="footer-desktop">
-            <div class="pepsi-logo-container">
-                <img class="pepsi-logo" src="images/pepsi-logo.png" alt="">
-            </div>
-            <div class="links-list">
+            <div id="linkList">
                 <ul class="list">
+                    <li class="list-item">
+                        <a href="#">what's new</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#">newsletter</a>
+                    </li>
                     <li class="list-item">
                         <a href="#">contact us</a>
                     </li>
                     <li class="list-item">
-                        <a href="#">terms & conditions</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#">privacy policy</a>
-                    </li>
-                </ul>
-                <ul class="list">
-                    <li class="list-item">
-                        <a href="#">copyright</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#">product facts</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#">store location</a>
-                    </li>
-                </ul>
-                <ul class="list">
-                    <li class="list-item">
-                        <a href="#">serve pepsi</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#">about our ads</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#">carrers</a>
+                        <a href="#">buy pepsi products</a>
                     </li>
                 </ul>
             </div>
-            <div class="footer__social-group">
-                <button class="btn">subscribe to newsletter</button>
+            <div class="linkListDesktop">
+                <div class="nav-logo">
+                    <img class="pepsi-logo" src="images/pepsi-logo.png" alt="">
+                </div>
                 <ul class="list list-inline">
                     <li class="list-item">
-                        <a href="#">
-                            <img class="social-icon" src="images/icon-twitter.svg" alt="">
-                        </a>
+                        <div id="productList">
+                            view products
+                            <span class="chevron"></span>
+                        </div>
                     </li>
                     <li class="list-item">
-                        <a href="#">
-                            <img class="social-icon" src="images/icon-facebook.svg" alt="">
-                        </a>
+                        <a href="#">what's new</a>
                     </li>
                     <li class="list-item">
-                        <a href="#">
-                            <img class="social-icon" src="images/icon-instagram.svg" alt="">
-                        </a>
+                        <a href="#">newsletter</a>
                     </li>
                     <li class="list-item">
-                        <a href="#">
-                            <img class="social-icon" src="images/icon-youtube.svg" alt="">
-                        </a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#">
-                            <img class="social-icon" src="images/icon-tiktok.svg" alt="">
-                        </a>
+                        <a href="#">contact us</a>
                     </li>
                 </ul>
+                <button class="btn">buy pepsi products</button>
             </div>
-        </div>
-    </footer>
+        </nav>
+    </header>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

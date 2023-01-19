@@ -1,15 +1,57 @@
-<!-- This is on mobile screen only -->
-<nav class="nav">
-    <a href="#">
-        <img class="logo" src="images/pepsi-logo.png" alt="">
-    </a>
-    <div class="products">
-        view products
-        <span class="chevron"></span>
-    </div>
-    <div class="menuToggle">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-    </div>
-</nav>
+<header>
+    <nav class="nav">
+        <div class="nav__mobile">
+            <div class="nav-logo">
+                <img class="pepsi-logo" src="images/pepsi-logo.png" alt="">
+            </div>
+            <div id="productList">
+                view products
+                <span class="chevron"></span>
+            </div>
+            <a href="javascript:void(0);" class="menuToggle" onclick="menu()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </a>
+        </div>
+        <div id="linkList">
+            <ul class="list">
+                <li class="list-item">
+                    <a href="#">what's new</a>
+                </li>
+                <li class="list-item">
+                    <a href="#">newsletter</a>
+                </li>
+                <li class="list-item">
+                    <a href="#">contact us</a>
+                </li>
+                <li class="list-item">
+                    <a href="#">buy pepsi products</a>
+                </li>
+            </ul>
+        </div>
+        <div class="linkListDesktop">
+            <div class="nav-logo">
+                <img class="pepsi-logo" src="images/pepsi-logo.png" alt="">
+            </div>
+            <ul class="list list-inline">
+                <li class="list-item">
+                    <div id="productList">
+                        view products
+                        <span class="chevron"></span>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <a href="#">what's new</a>
+                </li>
+                <li class="list-item">
+                    <a href="#">newsletter</a>
+                </li>
+                <li class="list-item">
+                    <a href="#">contact us</a>
+                </li>
+            </ul>
+            <button class="btn">buy pepsi products</button>
+        </div>
+    </nav>
+</header>

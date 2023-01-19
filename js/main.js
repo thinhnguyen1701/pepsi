@@ -1,17 +1,13 @@
-function menuToggle(){
-    var toggle = document.getElementById("links");
-    if (toggle.style.display === "block"){
-        toggle.style.display = "none";
+function menu() {
+    var linksList = document.getElementById("linkList");
+    var productsList = document.getElementById("productList");
+    if (linksList.style.display === "flex") {
+        linksList.style.display = "none";
+        productsList.style.display = "block";
     } else {
-        toggle.style.display = "block";
-    }
-}
-
-function listProducts(){
-    var listP = document.getElementById("listProducts");
-    if (listP.style.display === "block"){
-        listP.style.display = "none";
-    } else {
-        listP.style.display = "block";
+        linksList.style.display = "flex";
+        linksList.style.justifyContent = "center";
+        linksList.style.alignItems = "center";
+        productsList.style.display = "none";
     }
 }
